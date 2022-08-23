@@ -3,17 +3,24 @@
 #Se o resto da divisão for DIFERENTE de zero ENTÃO o numero é primo
 #Se o resto da divisão for IGUAL a zero ENTÂO o numero não é primo
 
+print('**********************************\n'
+      '********* NUMERO PRIMO ***********\n'
+      '**********************************\n'
+)
+
+
 numero = int(input('Digite um numero: '))
+multiplo = 0
 
-if numero == 1:
-    print(f'{numero} não é primo')
-elif numero%2!=0 or numero == 2:
+for count in range(2,numero):
+    if (numero % count == 0):
+        print("Multiplo de", count)
+        multiplo += 1
+if multiplo == 0:
     print(f'{numero} é primo')
-elif numero%2==0:
-    print(f'{numero} não é primo')
+else:
+    print(f'{numero} Não é primo')
 
-# def test_retorna_numero_primo():
-#     assert primo(2) == "numero primo"
 
 
 
