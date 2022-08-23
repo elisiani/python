@@ -15,7 +15,7 @@ for count in range(2,numero):
     if (numero % count == 0):
         print("Multiplo de", count)
         multiplo += 1
-if multiplo == 0:
+if multiplo == 0 and multiplo >=2:
     print(f'{numero} é primo')
 else:
     print(f'{numero} Não é primo')
